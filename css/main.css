@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+
+  background: #fff;
+}
+
+.todo {
+  width: 800px;
+  margin: 100px auto;
+  border: 2px solid #474E5E;
+
+  background: #fff;
+}
+
+.todo__header {
+  background: #039AAF;
+}
+
+.todo__header-text {
+  margin: 0;
+  padding: 20px;
+  
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #474E5E; 
+}
+
+.todo__list {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  
+  color: #474E5E;
+  list-style: none;
+  background: #fff;
+}
+
+.todo__list__item {
+  width: 100%;
+  display: flex;
+}
+
+.list__item__title {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.list__item__edit {
+  margin-right: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  border: 2px solid #474E5E;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+
+  background: #FFCA10;
+
+  transition: 0.3s linear all;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+
+  color: #FFCA10;
+
+  background: #000;
+}
+
+.button:active {
+  cursor: pointer;
+}
+
+.todo__form {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  background: #039AAF;
+}
+
+.add__input {
+ /* width: 70%;*/
+  flex-grow: 3;
+  margin-right: 10px;
+  padding: 5px 10px;
+
+  border: none;
+
+  color: #474E5E;
+  font-size: 16px;
+  line-height: 16px;
+}
