@@ -31,12 +31,37 @@ body {
 .todo__header-text {
   margin: 0;
   padding: 20px;
-  
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
   color: #474E5E; 
+}
+
+.todo__status {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  
+  border-top: 2px solid #474E5E;
+  border-bottom: 2px solid #474E5E;
+
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+
+  background: #FFCA10;
+}
+
+.todo__tasks {
+  width: 50%;
+
+  border-right: 2px solid #474E5E;
+}
+
+.todo__complete {
+  width: 50%;
 }
 
 .todo__list {
@@ -50,13 +75,30 @@ body {
 }
 
 .todo__list__item {
+  position: relative;
+
   width: 100%;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .list__item__title {
   margin-right: auto;
   margin-left: 10px;
+}
+
+.list__item__textfield {
+  position: absolute;
+  left: 25px;
+  top: -8px;
+
+  padding: 5px;
+  width: 50%;
+  display: none;
+
+  font-size: 16px;
+  line-height: 16px;
+  color: #474E5E;
 }
 
 .list__item__edit {
@@ -95,11 +137,12 @@ body {
   display: flex;
   justify-content: space-between;
 
+  border-top: 2px solid #474E5E;
+
   background: #039AAF;
 }
 
 .add__input {
- /* width: 70%;*/
   flex-grow: 3;
   margin-right: 10px;
   padding: 5px 10px;
@@ -109,4 +152,15 @@ body {
   color: #474E5E;
   font-size: 16px;
   line-height: 16px;
+}
+
+/* js */
+.complete {
+  text-decoration: line-through;
+
+  opacity: 0.5;
+}
+
+.editing {
+ display: block;
 }
