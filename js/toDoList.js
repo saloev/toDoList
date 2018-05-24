@@ -2,7 +2,7 @@ const contOfTasks = document.querySelector(".tasks__count"),
       contOfCompleteTask = document.querySelector(".coplete__count"),
       
       todoList = document.querySelector(".todo__list"),
-      todoListItem = document.querySelector(".todo__list__item"),
+      todoListItem = document.querySelectorAll(".todo__list__item"),
       
       todoForm = document.querySelector(".todo__form"),
       addInput = document.querySelector(".add__input"),
@@ -116,3 +116,9 @@ function deleteTodoItem(e) {
    
    listItem.remove();
 }
+
+function init() {
+  todoListItem.forEach(bindEvents);
+}
+
+document.addEventListener("DOMContentLoaded", init);
